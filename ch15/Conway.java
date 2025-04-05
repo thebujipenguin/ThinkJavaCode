@@ -81,14 +81,15 @@ public class Conway {
      */
     private int countAlive(int r, int c) {
         int count = 0;
-        count += grid.test(r - 1, c - 1);
-        count += grid.test(r - 1, c);
-        count += grid.test(r - 1, c + 1);
-        count += grid.test(r, c - 1);
-        count += grid.test(r, c + 1);
-        count += grid.test(r + 1, c - 1);
-        count += grid.test(r + 1, c);
-        count += grid.test(r + 1, c + 1);
+        //check every neighbor around cell at (r,c) with helper method test
+        count += grid.test(r - 1, c - 1); // top-left
+        count += grid.test(r - 1, c);     // top
+        count += grid.test(r - 1, c + 1); // top-right
+        count += grid.test(r, c - 1);     // left
+        count += grid.test(r, c + 1);     // right
+        count += grid.test(r + 1, c - 1); // bottom-left
+        count += grid.test(r + 1, c);     // bottom
+        count += grid.test(r + 1, c + 1); // bottom-right
         return count;
     }
 
@@ -122,16 +123,16 @@ public class Conway {
      * @return number of neighbors for each cell
      */
     private int[][] countNeighbors() {
-        int rows = grid.numRows();
-        int cols = grid.numCols();
+        int rows = grid.numRows();//get number of rows
+        int cols = grid.numCols();//get number of columns
 
-        int[][] counts = new int[rows][cols];
-        for (int r = 0; r < rows; r++) {
+        int[][] counts = new int[rows][cols];//create new 2d array to hold neighbor counts
+        for (int r = 0; r < rows; r++) {//loop through cells
             for (int c = 0; c < cols; c++) {
-                counts[r][c] = countAlive(r, c);
+                counts[r][c] = countAlive(r, c);//use helper function to count how many are alive for cell (r,c)
             }
         }
-        return counts;
+        return counts;//return the the full grid
     }
 
     /**
@@ -140,13 +141,13 @@ public class Conway {
      * @param counts number of neighbors for each cell
      */
     private void updateGrid(int[][] counts) {
-        int rows = grid.numRows();
+        int rows = grid.numRows();//get number of rows and columns
         int cols = grid.numCols();
 
-        for (int r = 0; r < rows; r++) {
+        for (int r = 0; r < rows; r++) {//loop through grid
             for (int c = 0; c < cols; c++) {
-                Cell cell = grid.getCell(r, c);
-                updateCell(cell, counts[r][c]);
+                Cell cell = grid.getCell(r, c);//get current Cell object at position (r,c)
+                updateCell(cell, counts[r][c]);//call helper function to determine behavior of cell based on neighbors
             }
         }
     }
