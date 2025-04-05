@@ -14,13 +14,62 @@ public class Conway {
      * Creates a grid with two Blinkers.
      */
     public Conway() {
-        grid = new GridCanvas(5, 10, 20);
-        grid.turnOn(2, 1);
-        grid.turnOn(2, 2);
+        grid = new GridCanvas(50, 100, 20);
+
+        //glider
+        grid.turnOn(3, 1);
+        grid.turnOn(4, 2);
         grid.turnOn(2, 3);
-        grid.turnOn(1, 7);
-        grid.turnOn(2, 7);
-        grid.turnOn(3, 7);
+        grid.turnOn(3, 3);
+        grid.turnOn(4, 3);
+        grid.turnOn(7, 3);
+
+        //indefinite glider gun
+        grid.turnOn(25, 2);
+        grid.turnOn(25, 3);
+        grid.turnOn(26, 2);
+        grid.turnOn(26, 3);
+        grid.turnOn(23, 12);
+        grid.turnOn(24, 12);
+        grid.turnOn(25, 12);
+        grid.turnOn(22, 13);
+        grid.turnOn(26, 13);
+        grid.turnOn(21, 14);
+        grid.turnOn(27, 14);
+        grid.turnOn(21, 15);
+        grid.turnOn(27, 15);
+        grid.turnOn(22, 16);
+        grid.turnOn(26, 16);
+        grid.turnOn(23, 17);
+        grid.turnOn(25, 17);
+        grid.turnOn(24, 18);
+        grid.turnOn(24, 19);
+        grid.turnOn(23, 20);
+        grid.turnOn(25, 20);
+        grid.turnOn(22, 22);
+        grid.turnOn(23, 22);
+        grid.turnOn(21, 23);
+        grid.turnOn(23, 24);
+        grid.turnOn(22, 24);
+        grid.turnOn(21, 25);
+        grid.turnOn(25, 35);
+        grid.turnOn(26, 35);
+        grid.turnOn(27, 35);
+        grid.turnOn(24, 36);
+        grid.turnOn(23, 37);
+        grid.turnOn(25, 37);
+        grid.turnOn(24, 38);
+        grid.turnOn(22, 38);
+        grid.turnOn(25, 38);
+        grid.turnOn(24, 39);
+        grid.turnOn(23, 40);
+        grid.turnOn(22, 41);
+        grid.turnOn(25, 41);
+        grid.turnOn(26, 41);
+        grid.turnOn(27, 41);
+        grid.turnOn(25, 46);
+        grid.turnOn(26, 46);
+        grid.turnOn(27, 46);
     }
 
     /**
