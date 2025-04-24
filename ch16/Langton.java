@@ -3,9 +3,9 @@ import javax.swing.JFrame;
 /**
  * Langton's Ant.
  */
-public class Langton {
+public class Langton extends Automaton{
 
-    private GridCanvas grid;
+    //private GridCanvas grid;
     private int xpos;
     private int ypos;
     private int head; // 0=North, 1=East, 2=South, 3=West
@@ -67,7 +67,7 @@ public class Langton {
      * 
      * @param rate frames per second
      */
-    private void mainloop() {
+    /*private void mainloop() {
         while (true) {
 
             // update the drawing
@@ -81,7 +81,7 @@ public class Langton {
                 // do nothing
             }
         }
-    }
+    }*/
 
     /**
      * Creates and runs the simulation.
@@ -97,7 +97,7 @@ public class Langton {
         frame.add(game.grid);
         frame.pack();
         frame.setVisible(true);
-        game.mainloop();
+        game.mainloop(500);
     }
 
 }

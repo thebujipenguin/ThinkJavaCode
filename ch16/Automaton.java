@@ -18,7 +18,7 @@ public abstract class Automaton {
      * 
      * @param rate frames per second
      */
-    private void mainloop(int rate) {
+    protected void mainloop(int rate) {
         while (true) {
 
             // update the drawing

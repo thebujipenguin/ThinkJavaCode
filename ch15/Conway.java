@@ -17,59 +17,53 @@ public class Conway {
         grid = new GridCanvas(50, 100, 20);
 
         //glider
-        grid.turnOn(3, 1);
+        /*grid.turnOn(3, 1);
         grid.turnOn(4, 2);
         grid.turnOn(2, 3);
         grid.turnOn(3, 3);
         grid.turnOn(4, 3);
-        grid.turnOn(7, 3);
+        grid.turnOn(7, 3);*/
 
         //indefinite glider gun
-        grid.turnOn(25, 2);
-        grid.turnOn(25, 3);
-        grid.turnOn(26, 2);
-        grid.turnOn(26, 3);
-        grid.turnOn(23, 12);
-        grid.turnOn(24, 12);
-        grid.turnOn(25, 12);
-        grid.turnOn(22, 13);
-        grid.turnOn(26, 13);
-        grid.turnOn(21, 14);
-        grid.turnOn(27, 14);
-        grid.turnOn(21, 15);
-        grid.turnOn(27, 15);
-        grid.turnOn(22, 16);
-        grid.turnOn(26, 16);
-        grid.turnOn(23, 17);
-        grid.turnOn(25, 17);
-        grid.turnOn(24, 18);
-        grid.turnOn(24, 19);
-        grid.turnOn(23, 20);
-        grid.turnOn(25, 20);
-        grid.turnOn(22, 22);
-        grid.turnOn(23, 22);
-        grid.turnOn(21, 23);
-        grid.turnOn(23, 24);
-        grid.turnOn(22, 24);
-        grid.turnOn(21, 25);
-        grid.turnOn(25, 35);
-        grid.turnOn(26, 35);
-        grid.turnOn(27, 35);
-        grid.turnOn(24, 36);
-        grid.turnOn(23, 37);
-        grid.turnOn(25, 37);
-        grid.turnOn(24, 38);
-        grid.turnOn(22, 38);
-        grid.turnOn(25, 38);
-        grid.turnOn(24, 39);
-        grid.turnOn(23, 40);
-        grid.turnOn(22, 41);
-        grid.turnOn(25, 41);
-        grid.turnOn(26, 41);
-        grid.turnOn(27, 41);
-        grid.turnOn(25, 46);
-        grid.turnOn(26, 46);
-        grid.turnOn(27, 46);
+        grid.turnOn(15, 11);
+        grid.turnOn(15, 12);
+        grid.turnOn(16, 11);
+        grid.turnOn(16, 12);
+
+        grid.turnOn(13, 23);
+        grid.turnOn(13, 24);
+        grid.turnOn(14, 22);
+        grid.turnOn(14, 26);
+        grid.turnOn(15, 21);
+        grid.turnOn(15, 27);
+        grid.turnOn(16, 21);
+        grid.turnOn(16, 25);
+        grid.turnOn(16, 27);
+        grid.turnOn(16, 28);
+        grid.turnOn(17, 21);
+        grid.turnOn(17, 27);
+        grid.turnOn(18, 22);
+        grid.turnOn(18, 26);
+        grid.turnOn(19, 23);
+        grid.turnOn(19, 24);
+
+        grid.turnOn(11, 35);
+        grid.turnOn(12, 33);
+        grid.turnOn(12, 35);
+        grid.turnOn(13, 31);
+        grid.turnOn(13, 32);
+        grid.turnOn(14, 31);
+        grid.turnOn(14, 32);
+        grid.turnOn(15, 31);
+        grid.turnOn(15, 32);
+        grid.turnOn(16, 33);
+        grid.turnOn(16, 35);
+        grid.turnOn(17, 35);
+
+        grid.turnOn(13, 45);
+        grid.turnOn(13, 46);
+        grid.turnOn(14, 45);
+        grid.turnOn(14, 46);
     }
 
     /**

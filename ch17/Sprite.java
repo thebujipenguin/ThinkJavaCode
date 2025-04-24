@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.File;
@@ -81,5 +82,17 @@ public class Sprite implements Actor, KeyListener {
     public void keyTyped(KeyEvent e) {
         // do nothing
     }
+
+    @Override
+    public void onCollision(Actor other) {
+        System.out.println("collision");
+    }
+
+    @Override
+    public Rectangle getBounds() {
+//        if (image == null) return new Rectangle(xpos, ypos, 0, 0);
+        return new Rectangle(xpos, ypos, image.getWidth(null), image.getHeight(null));
+    }
+
 
 }

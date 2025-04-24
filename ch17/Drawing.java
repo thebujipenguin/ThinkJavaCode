@@ -36,9 +36,9 @@ public class Drawing extends Canvas {
      * 
      * @return array of actor objects
      */
-    public Object[] getActors() {
-        return list.toArray();
-    }
+    public Actor[] getActors() {
+        return list.toArray(new Actor[0]);
+    }//changed from Object[] to Actor[]
 
     /**
      * Draws all the actors on the canvas.

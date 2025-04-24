@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Polygon;
+import java.awt.Rectangle;
 
 /**
  * Specialization of Polygon that has a color and the ability to draw itself.
@@ -45,4 +46,13 @@ public class DrawablePolygon extends Polygon implements Actor {
         p.color = Color.GREEN;
     }
 
+    @Override
+    public Rectangle getBounds() {
+        return super.getBounds();
+    }
+
+    @Override
+    public void onCollision(Actor other) {
+        // You can make this empty if DrawablePolygon doesn't need to react
+    }
 }

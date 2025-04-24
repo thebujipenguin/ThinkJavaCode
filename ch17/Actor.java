@@ -1,9 +1,10 @@
 import java.awt.Graphics;
+import java.awt.Rectangle;
 
 /**
  * Graphical simulation element.
  */
-public interface Actor {
+public interface Actor {//must be implemented by another class, does not contain implementation of methods
 
     /**
      * Draws the simulation element in the context.
@@ -17,4 +18,13 @@ public interface Actor {
      */
     void step();
 
+    /**
+     * Collisions
+     */
+    void onCollision(Actor other);
+
+    /**
+     * For Sprite class
+     */
+    Rectangle getBounds();
 }
