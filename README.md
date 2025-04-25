@@ -4,5 +4,6 @@ How to play:
 In terminal:  
 * Run command cd ch17  
 * Run command javac VideoGame.java  
-* Run command java VideoGame  
+* Run command java VideoGame
+
 Enjoy
