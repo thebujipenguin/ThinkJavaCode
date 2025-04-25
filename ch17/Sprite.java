@@ -50,16 +50,16 @@ public class Sprite implements Actor, KeyListener {
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
             case KeyEvent.VK_UP:
-                dy = -5;
+                dy = -15;
                 break;
             case KeyEvent.VK_DOWN:
-                dy = +5;
+                dy = +15;
                 break;
             case KeyEvent.VK_LEFT:
-                dx = -5;
+                dx = -15;
                 break;
             case KeyEvent.VK_RIGHT:
-                dx = +5;
+                dx = +15;
                 break;
         }
     }
@@ -85,7 +85,10 @@ public class Sprite implements Actor, KeyListener {
 
     @Override
     public void onCollision(Actor other) {
-        System.out.println("collision");
+        //System.out.println("collision");
+        /**
+         * nothing
+         */
     }
 
     @Override
